@@ -4,34 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Curriculum vitae de Adriana Nesse</title>
-    <link rel="stylesheet" href="estilos2.css">
+    <link rel="stylesheet" href="estilos3.css">
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
     <script src="https://kit.fontawesome.com/dbbb840cb8.js" crossorigin="anonymous"></script>
 
 
 </head>
 <body>
-    <div>
+    <div class="header">
+        <h1>Curriculum vitae - Adriana Nesseo</h1>
+        <img src="https://randomuser.me/api/portraits/women/20.jpg" alt="foto de nestor" 
+        height="200px" width="200px"/>
+        <p>En esta página encontrarás toda mi información personal y profesional</p>    
+      </div>
     
-    <h1>Curriculum vitae - Adriana Nesseo</h1>
-    <img src="https://randomuser.me/api/portraits/women/20.jpg" alt="foto de nestor" 
-    height="200px" width="200px"/>
-    <p>En esta página encontrarás toda mi información personal y profesional</p>
-    <h2><i class="fa-solid fa-envelope"></i> Datos Personales</h2>
-    <ul>
+    <div class="row">
+      <div class="col-3 menu">
+          <ul>
+            <li><a href="#DP">Datos Personales</a> </li>
+            <li><a href="#EL">Experiencia Laboral</a> </li>
+            <li><a href="#HB">Habilidades</a> </li>
+            <li><a href="#CT">Contacto</a> </li>
+          </ul>
+        </div>
+      
+    <div class="col-9">
+
+       <h2  id="DP"><i class="fa-solid fa-envelope"></i> Datos Personales</h2>
+       <ul>
         <li>Dirección: Callao 123, Buenos Aires, Argentina </li>
         <li>Teléfono: +541167654321</li>
         <li>Correo electrónico: adriananesseo@gmail.com</li>
-     </ul>
+       </ul>
 
-    <h2><i class="fa-solid fa-briefcase"></i> Experiencia laboral</h2>
+       <h2 id="EL"><i class="fa-solid fa-briefcase"></i> Experiencia laboral</h2>
          <ul>
             <li>2019-2023 Ux researcher Semi-Senior en Globant (Buenos Aires, Argentina)</li>
             <li>2017-2019 Ux researcher Junior en Accenture (Buenos Aires, Argentina)</li>
             <li>2011-2017 Empleada administrativa en Office (Mar del Plata, Argentina)</li>
          </ul>
 
-     <h2><i class="fa-solid fa-glasses"></i> Habilidades</h2>
+       <h2 id="HB"><i class="fa-solid fa-glasses"></i> Habilidades</h2>
          <ul>
             <li>Investigación cualitativa y cuantitativa</li>
             <li>Métodos ágiles, design thinking</li>
@@ -43,17 +56,16 @@
          <script
             src="funciones2.js"></script>
 
-    <h3>Si desea contactarme, por favor deje sus datos en el siguiente formulario</h3>
+       <h3 id="CT">Si desea contactarme, por favor deje sus datos en el siguiente formulario</h3>
          <form action="" method="post">
             <lable>Nombre</lable>
             <input type="nombre" name="nombre" placeholder="ingrese su nombre" required/>
-          
+
             <lable>E-mail</lable>
             <input type="email" name="mail" placeholder="ingrese su mail" required/>
             <input type="submit" name="Enviar"/>
         </form>
-
-       
-        </div>
+    </div>
+</div>
 </body>
 </html>
